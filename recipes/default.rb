@@ -21,7 +21,11 @@ include_recipe "apt"
 
 template "/etc/apt/sources.list" do
   mode 00644
-  variables :code_name => node['lsb']['codename']
+  variables(
+    :code_name => node['lsb']['codename'],
+    :security_url => node['ubuntu']['security_url'],
+    :archive_url => node['ubuntu']['archive_url']
+  )
   notifies :run, "execute[apt-get update]", :immediately
   source "sources.list.erb"
 end
