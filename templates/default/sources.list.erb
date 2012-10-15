@@ -3,13 +3,13 @@
 #
 
 deb <%= @archive_url %> <%= @code_name %> main restricted universe multiverse
-deb-src <%= @archive_url%> <%= @code_name %> main restricted universe multiverse
+<% if @include_source_packages -%>deb-src <%= @archive_url%> <%= @code_name %> main restricted universe multiverse<% end -%>
 
 deb <%= @archive_url %> <%= @code_name %>-updates main restricted universe multiverse
-deb-src <%= @archive_url %> <%= @code_name %>-updates main restricted universe multiverse
+<% if @include_source_packages -%>deb-src <%= @archive_url %> <%= @code_name %>-updates main restricted universe multiverse<% end -%>
 
 #
 # Security updates
 #
 deb <%= @security_url %> <%= @code_name %>-security main restricted universe multiverse
-deb-src <%= @security_url %> <%= @code_name %>-security main restricted universe multiverse
+<% if @include_source_packages -%>deb-src <%= @security_url %> <%= @code_name %>-security main restricted universe multiverse<% end -%>
