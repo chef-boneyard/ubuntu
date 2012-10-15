@@ -25,7 +25,7 @@ template "/etc/apt/sources.list" do
     :code_name => node['lsb']['codename'],
     :security_url => node['ubuntu']['security_url'],
     :archive_url => node['ubuntu']['archive_url'],
-    :include_source_packages => node['ubuntu'['include_source_packages']
+    :include_source_packages => node['ubuntu']['include_source_packages']
   )
   notifies :run, "execute[apt-get update]", :immediately
   source "sources.list.erb"
