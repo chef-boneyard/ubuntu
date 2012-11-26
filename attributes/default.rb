@@ -19,6 +19,8 @@
 
 case platform
 when "ubuntu"
-  set[:ubuntu][:archive_url]  = "http://us.archive.ubuntu.com/ubuntu"
-  set[:ubuntu][:security_url] = "http://security.ubuntu.com/ubuntu"
+  default['ubuntu']['archive_url']  = "http://us.archive.ubuntu.com/ubuntu"
+  default['ubuntu']['security_url'] = "http://security.ubuntu.com/ubuntu"
 end
+
+default['ubuntu']['include_source_packages'] = true
