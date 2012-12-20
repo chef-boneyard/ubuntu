@@ -22,6 +22,7 @@ See `attributes/default.rb` for default values.
 * `node['ubuntu']['archive_url']` - archived package repo URL
 * `node['ubuntu']['security_url']` - security update package repo URL
 * `node['ubuntu']['include_source_packages']` - Add source packages to the apt sources.  Defaults to true
+* `node['ubuntu']['architectures']` - Optional array of architectures to download from the repos.  Defaults to nil and all archs are used
 
 Recipes
 =======
