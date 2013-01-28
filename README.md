@@ -19,11 +19,11 @@ Attributes
 
 See `attributes/default.rb` for default values.
 
-* `node['ubuntu']['archive_url']` - archived package repo URL
-* `node['ubuntu']['security_url']` - security update package repo URL
+* `node['ubuntu']['archive_url']` - Archived package repo URL
+* `node['ubuntu']['security_url']` - Security update package repo URL
 * `node['ubuntu']['include_source_packages']` - Add source packages to the apt sources.  Defaults to true
 * `node['ubuntu']['architectures']` - Optional array of architectures to download from the repos.  Defaults to nil and all archs are used
-* `node['ubuntu']['repositories']` - repositories to use.  Defaults to "main restricted universe multiverse"
+* `node['ubuntu']['components']` - Repository components to use.  Defaults to "main restricted universe multiverse"
 
 Recipes
 =======
