@@ -23,6 +23,7 @@ See `attributes/default.rb` for default values.
 * `node['ubuntu']['security_url']` - security update package repo URL
 * `node['ubuntu']['include_source_packages']` - Add source packages to the apt sources.  Defaults to true
 * `node['ubuntu']['architectures']` - Optional array of architectures to download from the repos.  Defaults to nil and all archs are used
+* `node['ubuntu']['repositories']` - repositories to use.  Defaults to "main restricted universe multiverse"
 
 Recipes
 =======
@@ -48,6 +49,7 @@ License and Author
 
 Author:: Adam Jacob <adam@opscode.com>
 Author:: Joshua Timberman <joshua@opscode.com>
+Author:: Tim Smith <tsmith84@gmail.com>
 
 Copyright:: 2008-2011, Opscode, Inc
 
