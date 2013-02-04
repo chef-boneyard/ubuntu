@@ -35,16 +35,12 @@ end
 
 if node['ubuntu']['locale']
 
-  execute "set_locale_lc" do
-    command "update-locale LC_ALL=#{node['ubuntu']['locale']}"
-    action :run
-    not_if "grep LC_ALL=#{node['ubuntu']['locale']} /etc/default/locale"
-  end
-
-  execute "set_locale_lang" do
-    command "update-locale LANG=#{node['ubuntu']['locale']}"
-    action :run
-    not_if "grep LANG=#{node['ubuntu']['locale']} /etc/default/locale"
+ [ "LC_ALL", "LANG" ].each do |envvar|
+    execute "set_locale_#{envvar.downcase}" do
+      command "update-locale #{envvar}=#{node['ubuntu']['locale']}"
+      action :run
+      not_if "grep #{envvar}=#{node['ubuntu']['locale']} /etc/default/locale"
+    end
   end
 
 end
