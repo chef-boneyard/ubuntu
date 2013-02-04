@@ -32,3 +32,17 @@ template "/etc/apt/sources.list" do
   notifies :run, "execute[apt-get update]", :immediately
   source "sources.list.erb"
 end
+
+execute "set_locale_lc" do
+  command "update-locale LC_ALL=#{node['ubuntu']['locale']}"
+  action :run
+  only_if { node['ubuntu']['locale'] }
+  not_if "grep LC_ALL=#{node['ubuntu']['locale']} /etc/default/locale"
+end
+
+execute "set_locale_lang" do
+  command "update-locale LANG=#{node['ubuntu']['locale']}"
+  action :run
+  only_if { node['ubuntu']['locale'] }
+  not_if "grep LANG=#{node['ubuntu']['locale']} /etc/default/locale"
+end

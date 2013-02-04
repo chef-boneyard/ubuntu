@@ -24,3 +24,5 @@ default['ubuntu']['components'] = "main restricted universe multiverse"
 
 # If you want to limit the repositories to a specifc arch set this to an array of archs
 default['ubuntu']['architectures'] = nil
+
+default['ubuntu']['locale'] = nil
