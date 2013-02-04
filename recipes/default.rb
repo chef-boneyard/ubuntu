@@ -32,3 +32,15 @@ template "/etc/apt/sources.list" do
   notifies :run, "execute[apt-get update]", :immediately
   source "sources.list.erb"
 end
+
+if node['ubuntu']['locale']
+
+ [ "LC_ALL", "LANG" ].each do |envvar|
+    execute "set_locale_#{envvar.downcase}" do
+      command "update-locale #{envvar}=#{node['ubuntu']['locale']}"
+      action :run
+      not_if "grep #{envvar}=#{node['ubuntu']['locale']} /etc/default/locale"
+    end
+  end
+
+end
