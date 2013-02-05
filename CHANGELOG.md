@@ -1,3 +1,7 @@
+## v1.1.2:
+
+* [COOK-2334] - Add ability to set locale on Ubuntu
+
 ## v1.1.0:
 
 * [COOK-2104] - allow specifying architectures for repos
