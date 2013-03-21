@@ -46,6 +46,7 @@ if node['ubuntu']['locale']
       command "update-locale #{envvar}=#{node['ubuntu']['locale']}"
       action :run
       not_if "grep #{envvar}=#{node['ubuntu']['locale']} /etc/default/locale"
+      ENV[envvar] = node['ubuntu']['locale']
     end
   end
 
