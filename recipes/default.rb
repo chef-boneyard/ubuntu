@@ -19,6 +19,12 @@
 
 include_recipe "apt"
 
+node['ubuntu']['language_packs'].each do |lang|
+  package "language-pack-#{lang}" do
+    action :install
+  end
+end
+
 template "/etc/apt/sources.list" do
   mode 00644
   variables(

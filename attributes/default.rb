@@ -26,3 +26,5 @@ default['ubuntu']['components'] = "main restricted universe multiverse"
 default['ubuntu']['architectures'] = nil
 
 default['ubuntu']['locale'] = nil
+
+default['ubuntu']['language_packs'] = []
