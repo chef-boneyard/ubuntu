@@ -24,6 +24,7 @@ See `attributes/default.rb` for default values.
 * `node['ubuntu']['include_source_packages']` - Add source packages to the apt sources.  Defaults to true
 * `node['ubuntu']['architectures']` - Optional array of architectures to download from the repos.  Defaults to nil and all archs are used
 * `node['ubuntu']['components']` - Repository components to use.  Defaults to "main restricted universe multiverse"
+* `node['ubuntu']['language_packs']` - Language packs to install before locale set
 * `node['ubuntu']['locale']` - The locale to set the OS to
 
 Recipes

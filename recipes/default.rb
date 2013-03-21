@@ -19,6 +19,12 @@
 
 include_recipe "apt"
 
+node['ubuntu']['language_packs'].each do |lang|
+  package "language-pack-#{lang}" do
+    action :install
+  end
+end
+
 template "/etc/apt/sources.list" do
   mode 00644
   variables(
@@ -40,6 +46,7 @@ if node['ubuntu']['locale']
       command "update-locale #{envvar}=#{node['ubuntu']['locale']}"
       action :run
       not_if "grep #{envvar}=#{node['ubuntu']['locale']} /etc/default/locale"
+      ENV[envvar] = node['ubuntu']['locale']
     end
   end
 
