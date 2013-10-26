@@ -17,8 +17,6 @@
 # limitations under the License.
 #
 
-include_recipe "apt"
-
 template "/etc/apt/sources.list" do
   mode 00644
   variables(
@@ -32,6 +30,8 @@ template "/etc/apt/sources.list" do
   notifies :run, "execute[apt-get update]", :immediately
   source "sources.list.erb"
 end
+
+include_recipe "apt"
 
 if node['ubuntu']['locale']
 
