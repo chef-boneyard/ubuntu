@@ -44,3 +44,15 @@ if node['ubuntu']['locale']
   end
 
 end
+
+if node['ubuntu']['timezone']
+  execute "set_timezone_file" do
+    command "echo '#{node['ubuntu']['timezone']}' > /etc/timezone"
+    action :run
+  end
+
+  execute "set_timezone" do
+    command 'dpkg-reconfigure -f noninteractive tzdata'
+    action :run
+  end
+end
