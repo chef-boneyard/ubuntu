@@ -25,6 +25,7 @@ See `attributes/default.rb` for default values.
 * `node['ubuntu']['architectures']` - Optional array of architectures to download from the repos.  Defaults to nil and all archs are used
 * `node['ubuntu']['components']` - Repository components to use.  Defaults to "main restricted universe multiverse"
 * `node['ubuntu']['locale']` - The locale to set the OS to
+* `node['ubuntu]['locale]` - The timezone to set the OS to
 
 Recipes
 =======
