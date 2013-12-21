@@ -17,10 +17,10 @@
 # limitations under the License.
 #
 
-default['ubuntu']['archive_url']  = "http://us.archive.ubuntu.com/ubuntu"
-default['ubuntu']['security_url'] = "http://security.ubuntu.com/ubuntu"
+default['ubuntu']['archive_url']  = 'http://us.archive.ubuntu.com/ubuntu'
+default['ubuntu']['security_url'] = 'http://security.ubuntu.com/ubuntu'
 default['ubuntu']['include_source_packages'] = true
-default['ubuntu']['components'] = "main restricted universe multiverse"
+default['ubuntu']['components'] = 'main restricted universe multiverse'
 
 # If you want to limit the repositories to a specifc arch set this to an array of archs
 default['ubuntu']['architectures'] = nil

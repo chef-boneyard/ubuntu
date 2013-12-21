@@ -9,12 +9,3 @@ LineLength:
 
 HashSyntax:
   EnforcedStyle: hash_rockets
-
-MethodLength:
-  Max: 25
-
-CyclomaticComplexity:
-  Max: 7
-
-ParameterLists:
-  Enabled: false
