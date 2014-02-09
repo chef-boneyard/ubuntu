@@ -21,7 +21,7 @@ template '/etc/apt/sources.list' do
   mode 00644
   variables(
     :architectures => node['ubuntu']['architectures'],
-    :code_name => node['lsb']['codename'],
+    :code_name => node['ubuntu']['codename'],
     :security_url => node['ubuntu']['security_url'],
     :archive_url => node['ubuntu']['archive_url'],
     :include_source_packages => node['ubuntu']['include_source_packages'],

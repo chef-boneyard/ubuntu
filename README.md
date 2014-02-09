@@ -25,6 +25,7 @@ See `attributes/default.rb` for default values.
 * `node['ubuntu']['architectures']` - Optional array of architectures to download from the repos.  Defaults to nil and all archs are used
 * `node['ubuntu']['components']` - Repository components to use.  Defaults to "main restricted universe multiverse"
 * `node['ubuntu']['locale']` - The locale to set the OS to
+* `node['ubuntu']['codename']` - A codename to use, defaults to `node['lsb']['codename']`, e.g. `precise`.
 
 Recipes
 =======
@@ -53,6 +54,7 @@ Author:: Joshua Timberman <joshua@opscode.com>
 Author:: Tim Smith <tsmith84@gmail.com>
 
 Copyright:: 2008-2011, Opscode, Inc
+Copyright:: 2014, Chef Software, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
