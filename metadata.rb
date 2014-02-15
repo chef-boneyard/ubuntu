@@ -1,5 +1,5 @@
 name              'ubuntu'
-maintainer        'Opscode, Inc.'
+maintainer        'Chef Software, Inc.'
 maintainer_email  'cookbooks@opscode.com'
 license           'Apache 2.0'
 description       'Sets up apt sources for Ubuntu Linux'
