@@ -2,6 +2,10 @@ ubuntu Cookbook CHANGELOG
 ======================
 This file is used to list changes made in each version of the ubuntu cookbook.
 
+v1.1.8 (2014-07-28)
+-------------------
+Fixing compilation error on non-linux platforms
+
 v1.1.6 (2014-02-14)
 -------------------
 ### New Feature
