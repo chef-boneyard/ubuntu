@@ -1,6 +1,6 @@
 name              'ubuntu'
 maintainer        'Chef Software, Inc.'
-maintainer_email  'cookbooks@opscode.com'
+maintainer_email  'cookbooks@chef.io'
 license           'Apache 2.0'
 description       'Sets up apt sources for Ubuntu Linux'
 version           '1.1.8'

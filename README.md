@@ -49,11 +49,11 @@ etc). See __Roadmap__.
 License and Author
 ==================
 
-Author:: Adam Jacob <adam@opscode.com>
-Author:: Joshua Timberman <joshua@opscode.com>
+Author:: Adam Jacob <adam@chef.io>
+Author:: Joshua Timberman <joshua@chef.io>
 Author:: Tim Smith <tsmith84@gmail.com>
 
-Copyright:: 2008-2011, Opscode, Inc
+Copyright:: 2008-2011, Chef Software, Inc
 Copyright:: 2014, Chef Software, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");

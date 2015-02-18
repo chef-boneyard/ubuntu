@@ -9,10 +9,10 @@ Fixing compilation error on non-linux platforms
 v1.1.6 (2014-02-14)
 -------------------
 ### New Feature
-- **[COOK-4325](https://tickets.opscode.com/browse/COOK-4325)** - allow setting codename as an attribute
+- **[COOK-4325](https://tickets.chef.io/browse/COOK-4325)** - allow setting codename as an attribute
 
 ### Bug
-- **[COOK-3852](https://tickets.opscode.com/browse/COOK-3852)** - Ubuntu receipe triggers an apt-get update before replacing the default sources.list
+- **[COOK-3852](https://tickets.chef.io/browse/COOK-3852)** - Ubuntu receipe triggers an apt-get update before replacing the default sources.list
 
 
 v1.1.4
