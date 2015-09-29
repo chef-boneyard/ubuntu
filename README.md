@@ -6,19 +6,19 @@ Ubuntu Cookbook
 Sets up apt sources for Ubuntu.
 
 Requirements
-============
+------------
+#### Platforms
+- Ubuntu
 
-## Platform:
+#### Chef
+- Chef 11+
 
-* Ubuntu
+#### Cookbooks
+- apt
 
-## Cookbooks:
-
-* apt
 
 Attributes
-==========
-
+----------
 See `attributes/default.rb` for default values.
 
 * `node['ubuntu']['archive_url']` - Archived package repo URL
@@ -41,23 +41,20 @@ platform code name. The template adds sources for main, restricted,
 universe and multiverse.
 
 Usage
-=====
-
+-----
 Include `recipe[ubuntu]` on systems where you want to manage the
 sources.list. Currently the template enables main, restricted,
 universe and multiverse for the node's codename (e.g., lucid, natty,
 etc). See __Roadmap__.
 
-License and Author
-==================
+License & Authors
+-----------------
 
-Author:: Adam Jacob <adam@chef.io>
-Author:: Joshua Timberman <joshua@chef.io>
-Author:: Tim Smith <tim@chef.io>
+**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
 
-```text
-Copyright:: 2008-2015, Chef Software, Inc
+**Copyright:** 2008-2015, Chef Software, Inc.
 
+```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
