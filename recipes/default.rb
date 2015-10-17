@@ -2,7 +2,7 @@
 # Cookbook Name:: ubuntu
 # Recipe:: default
 #
-# Copyright 2008-2009, Chef Software, Inc.
+# Copyright 2008-2015, Chef Software, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,8 +17,14 @@
 # limitations under the License.
 #
 
+# dont fail on non-ubuntu runes
+unless node['platform'] == 'ubuntu'
+  Chef::Log.info("Skipping ubuntu::default as running on #{node['platform']}")
+  return
+end
+
 template '/etc/apt/sources.list' do
-  mode 00644
+  mode '0644'
   variables(
     architectures: node['ubuntu']['architectures'],
     code_name: node['ubuntu']['codename'],
