@@ -3,7 +3,7 @@ Ubuntu Cookbook
 [![Build Status](https://travis-ci.org/chef-cookbooks/ubuntu.svg?branch=master)](http://travis-ci.org/chef-cookbooks/ubuntu)
 [![Cookbook Version](https://img.shields.io/cookbook/v/ubuntu.svg)](https://supermarket.chef.io/cookbooks/ubuntu)
 
-Sets up apt sources for Ubuntu.
+Sets up apt sources for Ubuntu and manages the system locale settings
 
 Requirements
 ------------
