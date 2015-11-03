@@ -5,6 +5,7 @@ Ubuntu Cookbook
 
 Sets up apt sources for Ubuntu and manages the system locale settings
 
+
 Requirements
 ------------
 #### Platforms
