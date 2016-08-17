@@ -1,6 +1,9 @@
 # ubuntu Cookbook CHANGELOG
 This file is used to list changes made in each version of the ubuntu cookbook.
 
+## 1.2.1 (2016-08-17)
+- Join architectures with commas to prevent failures when using more than 1 arch
+
 ## v1.2.0 (2015-10-19)
 - Updated the cookbook to cleanly exit if running on non-Ubuntu platforms
 - Switched Travis CI integration testing from Digital Ocean to Kitchen-Docker on Travis

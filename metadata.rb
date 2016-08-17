@@ -4,7 +4,7 @@ maintainer_email 'cookbooks@chef.io'
 license 'Apache 2.0'
 description 'Sets up apt sources for Ubuntu Linux'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '1.2.0'
+version '1.2.1'
 depends 'apt'
 supports 'ubuntu'
 recipe 'ubuntu', 'Sets up sources for the nodes Ubuntu release'
