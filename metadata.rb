@@ -9,7 +9,7 @@ depends 'apt'
 supports 'ubuntu'
 recipe 'ubuntu', 'Sets up sources for the nodes Ubuntu release'
 
-source_url 'https://github.com/chef-cookbooks/ubuntu' if respond_to?(:source_url)
-issues_url 'https://github.com/chef-cookbooks/ubuntu/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/chef-cookbooks/ubuntu'
+issues_url 'https://github.com/chef-cookbooks/ubuntu/issues'
 
-chef_version '>= 11.0' if respond_to?(:chef_version)
+chef_version '>= 12'

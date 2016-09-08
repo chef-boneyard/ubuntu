@@ -8,7 +8,7 @@ Sets up apt sources for Ubuntu and manages the system locale settings
 - Ubuntu
 
 ### Chef
-- Chef 11+
+- Chef 12+
 
 ### Cookbooks
 - apt
