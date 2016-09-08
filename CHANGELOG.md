@@ -1,6 +1,11 @@
 # ubuntu Cookbook CHANGELOG
 This file is used to list changes made in each version of the ubuntu cookbook.
 
+## 2.0.0 (2016-09-07)
+- Add chef_version metadata
+- Testing updates
+- Require chef 12+
+
 ## 1.2.1 (2016-08-17)
 - Join architectures with commas to prevent failures when using more than 1 arch
 
