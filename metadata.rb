@@ -12,4 +12,4 @@ recipe 'ubuntu', 'Sets up sources for the nodes Ubuntu release'
 source_url 'https://github.com/chef-cookbooks/ubuntu'
 issues_url 'https://github.com/chef-cookbooks/ubuntu/issues'
 
-chef_version '>= 12'
+chef_version '>= 12.1'
