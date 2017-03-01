@@ -1,7 +1,15 @@
 # ubuntu Cookbook CHANGELOG
 This file is used to list changes made in each version of the ubuntu cookbook.
 
+## 2.0.1 (2017-03-01)
+
+- Require Chef 12.1+ instead of 12.0+
+- Test using Delivery local mode instead of Rake
+- Update copyright header format
+- Cookstyle fixes
+
 ## 2.0.0 (2016-09-07)
+
 - Add chef_version metadata
 - Testing updates
 - Require chef 12+
