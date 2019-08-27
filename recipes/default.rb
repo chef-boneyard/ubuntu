@@ -2,7 +2,7 @@
 # Cookbook:: ubuntu
 # Recipe:: default
 #
-# Copyright:: 2008-2017, Chef Software, Inc.
+# Copyright:: 2008-2019, Chef Software, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ template '/etc/apt/sources.list' do
   source 'sources.list.erb'
 end
 
-include_recipe 'apt'
+apt_update
 
 if node['ubuntu']['locale']
 

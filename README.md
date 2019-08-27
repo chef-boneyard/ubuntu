@@ -4,17 +4,23 @@
 Sets up apt sources for Ubuntu and manages the system locale settings
 
 ## Requirements
+
 ### Platforms
+
 - Ubuntu
 
 ### Chef
+
 - Chef 12.1+
 
 ### Cookbooks
-- apt
+
+- none
 
 ## Attributes
+
 See `attributes/default.rb` for default values.
+
 - `node['ubuntu']['archive_url']` - Archived package repo URL
 - `node['ubuntu']['security_url']` - Security update package repo URL
 - `node['ubuntu']['include_source_packages']` - Add source packages to the apt sources.  Defaults to true
@@ -24,13 +30,17 @@ See `attributes/default.rb` for default values.
 - `node['ubuntu']['codename']` - A codename to use, defaults to `node['lsb']['codename']`, e.g. `precise`.
 
 # Recipes
+
 ## default
+
 Includes the apt default recipe to ensure the package cache is updated and manages the `/etc/apt/sources.list` for the node's platform code name. The template adds sources for main, restricted, universe and multiverse.
 
 ## Usage
+
 Include `recipe[ubuntu]` on systems where you want to manage the sources.list. Currently the template enables main, restricted, universe and multiverse for the node's codename (e.g., lucid, natty, etc). See **Roadmap**.
 
 ## License & Authors
+
 **Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
 **Copyright:** 2008-2016, Chef Software, Inc.
