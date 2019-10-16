@@ -1,6 +1,17 @@
 # ubuntu Cookbook CHANGELOG
 This file is used to list changes made in each version of the ubuntu cookbook.
 
+## 3.0.0 (2019-10-16)
+
+- Update apache2 license string - [@tas50](https://github.com/tas50)
+- Update copyrights - [@tas50](https://github.com/tas50)
+- Cookstyle fix - [@tas50](https://github.com/tas50)
+- Rename the kitchen config - [@tas50](https://github.com/tas50)
+- Remove Ubuntu 14.04 testing for 18.04 - [@tas50](https://github.com/tas50)
+- Upddate the ignore file - [@tas50](https://github.com/tas50)
+- Use apt_update resource instead of depending on apt cookbook - [@tas50](https://github.com/tas50)
+- Remove extra metadata from metadata.rb - [@tas50](https://github.com/tas50)
+
 ## 2.0.1 (2017-03-01)
 
 - Require Chef 12.1+ instead of 12.0+
