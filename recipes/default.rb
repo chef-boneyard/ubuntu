@@ -18,7 +18,7 @@
 #
 
 # dont fail on non-ubuntu runes
-unless node['platform'] == 'ubuntu'
+unless platform?('ubuntu')
   Chef::Log.info("Skipping ubuntu::default as running on #{node['platform']}")
   return
 end
