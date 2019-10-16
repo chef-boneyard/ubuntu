@@ -11,7 +11,7 @@ Sets up apt sources for Ubuntu and manages the system locale settings
 
 ### Chef
 
-- Chef 12.1+
+- Chef 13+
 
 ### Cookbooks
 
