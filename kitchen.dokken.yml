@@ -1,7 +1,8 @@
 driver:
   name: dokken
   privileged: true # because Docker and SystemD/Upstart
-  chef_version: current
+  chef_version: <%= ENV['CHEF_VERSION'] || 'current' %>
+  chef_license: accept-no-persist
 
 transport:
   name: dokken
@@ -16,23 +17,16 @@ verifier:
 platforms:
 - name: centos-7
   driver:
-    image: centos:7
-    platform: rhel
+    image: dokken/centos-7
     pid_one_command: /usr/lib/systemd/systemd
-    intermediate_instructions:
-      - RUN yum -y install lsof which systemd-sysv initscripts
+
 
 - name: ubuntu-16.04
   driver:
-    image: ubuntu:16.04
+    image: dokken/ubuntu-16.04
     pid_one_command: /bin/systemd
 
 - name: ubuntu-18.04
   driver:
-    image: ubuntu:18.04
+    image: dokken/ubuntu-18.04
     pid_one_command: /bin/systemd
-
-suites:
-  - name: default
-    run_list:
-      - recipe[ubuntu]
