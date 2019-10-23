@@ -33,7 +33,7 @@ template '/etc/apt/sources.list' do
     include_source_packages: node['ubuntu']['include_source_packages'],
     components: node['ubuntu']['components']
   )
-  notifies :run, 'apt_update', :immediately
+  notifies :update, 'apt_update', :immediately
   source 'sources.list.erb'
 end
 
