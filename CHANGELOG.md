@@ -1,6 +1,10 @@
 # ubuntu Cookbook CHANGELOG
 This file is used to list changes made in each version of the ubuntu cookbook.
 
+## 3.0.2 (2019-10-23)
+
+- Fix notifications failures - [@tas50](https://github.com/tas50)
+
 ## 3.0.1 (2019-10-16)
 
 - Fix version requirement in the readme - [@tas50](https://github.com/tas50)
