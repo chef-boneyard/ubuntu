@@ -1,6 +1,13 @@
 # ubuntu Cookbook CHANGELOG
 This file is used to list changes made in each version of the ubuntu cookbook.
 
+## 3.0.3 (2019-10-23)
+
+- Add Ubuntu 18.04 testing and let the recipe test the apt update - [@tas50](https://github.com/tas50)
+- In Travis use dokken images, allow specifying chef version, accept license - [@tas50](https://github.com/tas50)
+- Fix the action used in the apt_update trigger - [@tas50](https://github.com/tas50)
+- Ignore file and readme updates - [@tas50](https://github.com/tas50)
+
 ## 3.0.2 (2019-10-23)
 
 - Fix notifications failures - [@tas50](https://github.com/tas50)

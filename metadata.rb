@@ -3,7 +3,7 @@ maintainer 'Chef Software, Inc.'
 maintainer_email 'cookbooks@chef.io'
 license 'Apache-2.0'
 description 'Sets up apt sources for Ubuntu Linux'
-version '3.0.2'
+version '3.0.3'
 supports 'ubuntu'
 
 source_url 'https://github.com/chef-cookbooks/ubuntu'
