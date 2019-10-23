@@ -4,13 +4,14 @@ driver:
 provisioner:
   name: chef_zero
   deprecations_as_errors: true
+  chef_license: accept-no-persist
 
 verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-14.04
   - name: ubuntu-16.04
+  - name: ubuntu-18.04
   - name: centos-7
 
 suites:
