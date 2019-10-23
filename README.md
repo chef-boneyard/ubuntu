@@ -29,9 +29,9 @@ See `attributes/default.rb` for default values.
 - `node['ubuntu']['locale']` - The locale to set the OS to
 - `node['ubuntu']['codename']` - A codename to use, defaults to `node['lsb']['codename']`, e.g. `precise`.
 
-# Recipes
+## Recipes
 
-## default
+### default
 
 Includes the apt default recipe to ensure the package cache is updated and manages the `/etc/apt/sources.list` for the node's platform code name. The template adds sources for main, restricted, universe and multiverse.
 
@@ -43,7 +43,7 @@ Include `recipe[ubuntu]` on systems where you want to manage the sources.list. C
 
 **Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
-**Copyright:** 2008-2016, Chef Software, Inc.
+**Copyright:** 2008-2019, Chef Software, Inc.
 
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
