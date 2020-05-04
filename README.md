@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This cookbook is deprecated. Instead use the apt_repository and locale resources built into Chef Infra Client for managing systems.
+
 # Ubuntu Cookbook
 [![Build Status](https://travis-ci.org/chef-cookbooks/ubuntu.svg?branch=master)](http://travis-ci.org/chef-cookbooks/ubuntu) [![Cookbook Version](https://img.shields.io/cookbook/v/ubuntu.svg)](https://supermarket.chef.io/cookbooks/ubuntu)
 
